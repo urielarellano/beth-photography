@@ -176,7 +176,7 @@ p {
     /* choose background image */
     background-image:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
-        url("assets/review-carousel-image.avif");
+        url("assets/review-carousel-image.png");
 }
 
 .carousel {
