@@ -4,8 +4,8 @@
   "description": "Basic Landing Page HTML+Tailwindcss project",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ./docs/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./docs/output.css --minify"
   },
   "keywords": [],
   "author": "",

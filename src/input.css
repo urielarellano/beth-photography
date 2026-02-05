@@ -70,7 +70,7 @@ p {
     /* choose background image */
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-        url("../public/assets/happy-family.jpg");
+        url("assets/happy-family.jpg");
 }
 .true-header {
     @apply flex flex-row justify-between w-full mb-15;
@@ -118,7 +118,7 @@ p {
 .final-cta-background {
     background-image: 
         linear-gradient(to bottom, white 0%, white 50%, rgb(255, 255, 255, 0.1) 75%),
-        url('../public/assets/final-background.jpg'); 
+        url('assets/final-background.jpg'); 
     background-size: fill;
     background-repeat: no-repeat;
     background-position: center bottom;
