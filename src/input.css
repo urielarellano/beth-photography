@@ -16,19 +16,18 @@ body {
 }
 
 h1 {
-    font-size: 42px;
+    @apply md:text-[42px] text-[32px] md:text-center text-center;
     font-weight: bold;
-    text-align: center;
     line-height: 1.2em;
     margin-bottom: 15px;
 }
 h2 {
-    font-size: 24px;
+    @apply md:text-[24px] text-xl;
 }
 
 p {
-    line-height: 1.7em;
-    font-size: 18px;
+    @apply md:text-[18px] text-[22px]! md:leading-[1.7em] leading-[1.5em];
+    
 }
 
 
@@ -48,14 +47,14 @@ p {
     @apply flex flex-col items-center gap-4;
 }
 .cta-button {
-    @apply p-7 pl-16 pr-16 font-bold rounded-sm text-lg;
+    @apply md:w-full w-[92%] md:p-7 p-5 md:pl-16 md:pr-16 pl-8 pr-8 font-bold text-center rounded-sm text-lg drop-shadow-md;
     /* choose cta button color */
     background-color: #7FFFF0;
 }
 .cta-button:hover {
     cursor: pointer;
     /* choose cta button color */
-    background-color: rgb(114, 229, 215);
+    background-color: rgb(115, 231, 218);
 }
 
 
@@ -65,45 +64,44 @@ p {
 /* hero section */
 .hero {
     @apply flex flex-col items-center gap-6
-    bg-cover bg-no-repeat bg-center p-8 pl-14 pr-14 pb-40;
-    font-size: 18px;
+    bg-cover bg-no-repeat bg-center md:p-8 md:pl-14 md:pr-14 md:pb-40 pb-20
+    p-2 pl-4 pr-4 text-center md:text-[18px] text-[22px];
     /* choose background image */
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
         url("assets/happy-family.jpg");
 }
 .true-header {
-    @apply flex flex-row justify-between w-full mb-15;
+    @apply flex flex-row justify-between w-full md:mb-15 mb-5;
 }
 .hero h1 {
-    font-size: 60px;
-    width: 60%;
+    @apply text-[36px] w-[90%] md:text-[60px] md:w-[60%];
 }
 
 /* sinlge column section */
 .single {
-    @apply flex flex-col items-center gap-6 pt-30 pb-30;
+    @apply flex flex-col items-center gap-6 md:pt-30 md:pb-30 pt-20 pb-20;
 }
 .single h1 {
-    width: 40%;
+    @apply md:w-[40%] w-[92%] text-center;
 }
 .single p {
-    width: 30%;
+    @apply md:w-[30%] w-[92%];
 }
 
 /* double column section */
 .double {
-    @apply grid grid-cols-2 items-center justify-center gap-y-14 gap-x-8 w-[80%];
+    @apply md:grid flex flex-col gap-6 md:grid-cols-2 items-center justify-center md:gap-y-14 md:gap-x-8 md:w-[80%]
+    w-[100%];
 }
 .double-col {
     @apply flex flex-col items-center gap-5;
 }
 .double h1 {
-    width: 85%;
-    text-align: left;
+    @apply md:text-left text-center md:w-[85%] w-[92%];
 }
 .double p {
-    width: 85%;
+    @apply md:w-[85%] w-[92%];
 }
 
 /* background images */
@@ -180,10 +178,10 @@ p {
 }
 
 .carousel {
-    @apply flex flex-row items-center justify-center gap-30 w-[70%]! text-xl;
+    @apply flex flex-row items-center justify-center md:gap-30 gap-3 md:w-[70%]! w-[95%]! text-xl;
 }
 .carousel span {
-    @apply text-center flex items-center justify-center w-[50vw] h-[30vh];
+    @apply text-center flex items-center justify-center md:w-[50vw] w-[100%]! md:h-[30vh] h-[45vh];
 }
 
 .review-carousel svg:hover {
@@ -228,7 +226,7 @@ p {
 
 /* form */
 .cta-form {
-    @apply flex flex-col items-center gap-3 w-[33%] text-lg;
+    @apply flex flex-col items-center gap-3 md:w-[33%] w-[85%] text-lg;
 }
 .cta-form input,
 .cta-form textarea {
